@@ -2,7 +2,7 @@
 const container = document.getElementById("app")
 
 async function fetchImages() {
-  const data = await fetch(`${import.meta.VITE_server}/images`)
+  const data = await fetch(`${import.meta.env.VITE_server}/images`)
   const result = await data.json()
   console.log(result)
   return result 
