@@ -7,6 +7,7 @@ async function fetchImages() {
   console.log(result)
   return result 
 }
+ async function makeImages() {
 
 const images = await fetchImages()
 console.log(images)
@@ -15,3 +16,6 @@ images.forEach(element => {
   image.src = element.image
   document.body.appendChild(image)
 });
+ }
+
+ makeImages()
